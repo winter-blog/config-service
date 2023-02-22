@@ -10,6 +10,7 @@ pipeline {
         DOCKER_CONTAINER_NAME = 'winter-blog-config-service'
 
         INTERNAL_PORT = 8888
+        
         SSH_CMD = 'ssh -i /var/lib/jenkins/.ssh/jenkins.pem ubuntu@3.34.53.11'
         ENV_FILE = '--env-file=./env/config-service.env'
         NETWORK = '--net winter-blog-network'
