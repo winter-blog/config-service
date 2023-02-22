@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: prod
+  application:
+    name: ${NAME}
+  rabbitmq:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+    username: ${REDIS_USER_NAME}
+    password: ${REDIS_USER_PASS}
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CONFIG_SERVER_GIT_URL}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
