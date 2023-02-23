@@ -14,7 +14,8 @@ spring:
       server:
         git:
           uri: ${CONFIG_SERVER_GIT_URL}
-          ignore-local-ssh-settings: false
+          username: ${GIT_USER_NAME}
+          password: ${GIT_PASS_WORD}
 management:
   endpoints:
     web:
