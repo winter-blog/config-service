@@ -14,8 +14,6 @@ spring:
       server:
         git:
           uri: ${CONFIG_SERVER_GIT_URL}
-          username: ${GIT_USER_NAME}
-          password: ${GIT_USER_PASS}
 
 management:
   endpoints:
