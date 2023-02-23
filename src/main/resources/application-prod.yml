@@ -14,58 +14,8 @@ spring:
       server:
         git:
           uri: ${CONFIG_SERVER_GIT_URL}
-          private-key: |
-            -----BEGIN RSA PRIVATE KEY-----
-            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
-            -----END RSA PRIVATE KEY-----
+          username: ${GIT_USER_NAME}
+          password: ${GIT_USER_PASS}
 
 management:
   endpoints:
