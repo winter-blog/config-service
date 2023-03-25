@@ -12,7 +12,7 @@ pipeline {
         PROFILE='-e "SPRING_PROFILES_ACTIVE=prod"'
         EXTERNAL_PORT = 8888
         INTERNAL_PORT = 8888
-        SSH_CMD = 'ssh -i /var/lib/jenkins/.ssh/jenkins.pem ubuntu@3.34.53.11'
+        SSH_CMD = 'ssh -i /var/lib/jenkins/.ssh/jenkins.pem ubuntu@3.39.159.26'
         ENV_FILE = '--env-file=./env/config-service.env'
         NETWORK = '--net winter-blog-network'
     }
